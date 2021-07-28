@@ -1,0 +1,64 @@
+GET http://localhost:80/token/user
+Authorization:
+Accept: application/json
+
+###
+
+GET http://localhost:80/users
+Authorization:
+Accept: application/json
+
+###
+
+POST http://localhost:80/users
+Authorization: b6d9e496-4d7a-4064-84f8-f889f71ef106
+Content-Type: application/json
+
+{
+  "email": "my.email",
+  "password": "Qwerty0",
+  "firstName": "AAA",
+  "lastName": "BBB",
+  "organization": "WORLD",
+  "role": "SPEAKER",
+  "state": "ACTIVE"
+}
+
+###
+
+GET http://localhost:80/users/6
+Authorization:
+Accept: application/json
+
+###
+
+PATCH http://localhost:80/users/8
+Authorization:
+Content-Type: application/json
+
+{
+  "role": "SPEAKER"
+}
+
+###
+
+DELETE http://localhost:80/users/12
+Authorization:
+
+{}
+
+###
+
+GET http://localhost:80/users/13/talks
+Authorization:
+Accept: application/json
+
+###
+
+POST http://localhost:80/users/role
+Authorization:
+Content-Type: application/json
+
+{
+  "role": "SPEAKER"
+}

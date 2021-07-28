@@ -1,0 +1,51 @@
+GET http://localhost:80/talks/5/schedule
+Authorization:
+Accept: application/json
+
+###
+GET http://localhost:80/talks/3/users
+Authorization:
+Accept: application/json
+
+###
+DELETE http://localhost:80/talks/2
+Authorization:
+Content-Type: application/json
+
+{}
+
+###
+PATCH http://localhost:80/talks/3
+Authorization:
+Content-Type: application/json
+
+{
+  "topic" : "M",
+  "description": "N"
+}
+
+###
+GET http://localhost:80/talks/2
+Authorization:
+Accept: application/json
+
+###
+GET http://localhost:80/talks
+Authorization:
+Accept: application/json
+
+###
+POST http://localhost:80/talks
+Authorization:
+Content-Type: application/json
+
+{
+  "topic": "D",
+  "description": "D"
+}
+
+###
+
+GET http://localhost:80/user/talks
+Authorization:
+Accept: application/json

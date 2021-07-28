@@ -1,0 +1,85 @@
+GET http://localhost:80/activation/026aa9e0-d91a-4e4b-b082-e1e89a17bceb
+Accept: application/json
+
+###
+
+POST http://localhost:80/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "Qwerty123"
+}
+
+###
+
+POST http://localhost:80/registration
+Content-Type: application/json
+
+{
+  "email": "dan.id2001@mail.ru",
+  "firstName": "Daniyar",
+  "lastName": "Idrisov",
+  "organization": "ITIS"
+}
+
+###
+
+POST http://localhost:80/login
+Content-Type: application/json
+
+{
+  "email": "dan.id2001@mail.ru",
+  "password": "Qwerty456"
+}
+
+###
+
+POST http://localhost:80/registration
+Content-Type: application/json
+
+{
+  "email": "sanfrancisco.live.games",
+  "password": "Qwerty789",
+  "firstName": "D",
+  "lastName": "I",
+  "organization": "KFU"
+}
+
+###
+
+POST http://localhost:80/login
+Content-Type: application/json
+
+{
+  "email": "sanfrancisco.live.games@gmail.com",
+  "password": "Qwerty789"
+}
+
+###
+
+POST http://localhost:80/registration
+Content-Type: application/json
+
+{
+  "email": "j.cole@gmail.com",
+  "password": "Qwerty",
+  "firstName": "J",
+  "lastName": "Cole",
+  "organization": "Rap"
+}
+
+###
+
+POST http://localhost:80/login
+Content-Type: application/json
+
+{
+  "email": "j.cole@gmail.com",
+  "password": "Qwerty"
+}
+
+###
+
+GET http://localhost:80/logout
+Authorization:

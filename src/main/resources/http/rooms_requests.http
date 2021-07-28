@@ -1,0 +1,15 @@
+GET http://localhost:80/rooms/3/schedule
+Authorization:
+Accept: application/json
+
+###
+GET http://localhost:80/rooms/6
+Authorization: cfb8d5bd-a3da-4415-8a7b-28913b27a8c1
+Accept: application/json
+
+###
+GET http://localhost:80/rooms
+Authorization:
+Accept: application/json
+
+###

@@ -1,0 +1,17 @@
+DELETE http://localhost:80/talks/3/users/13
+Authorization:
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:80/talks/3/users/13
+Authorization:
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:80/speakers
+Authorization:
+Accept: application/json

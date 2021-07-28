@@ -1,0 +1,45 @@
+DELETE http://localhost:80/schedule/4
+Authorization:
+Content-Type: application/json
+
+{}
+
+###
+PATCH http://localhost:80/schedule/4/rooms/2
+Authorization:
+Content-Type: application/json
+
+{
+  "talkTime": "17:00-18:00"
+}
+
+###
+GET http://localhost:80/schedule/3/room
+Authorization:
+Accept: application/json
+
+###
+GET http://localhost:80/schedule/3/talk
+Authorization:
+Accept: application/json
+
+###
+GET http://localhost:80/schedule/2
+Authorization:
+Accept: application/json
+
+###
+POST http://localhost:80/schedule/rooms/1/talks/4
+Authorization:
+Content-Type: application/json
+
+{
+  "talkTime": "16:00-17:00"
+}
+
+###
+GET http://localhost:80/schedule
+Authorization:
+Accept: application/json
+
+###
